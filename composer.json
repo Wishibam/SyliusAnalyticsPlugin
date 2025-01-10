@@ -16,10 +16,10 @@
         "doctrine/collections": "^1.6",
         "knplabs/knp-menu": "^3.1",
         "psr/event-dispatcher": "^1.0",
-        "setono/tag-bag": "^1.4",
-        "setono/tag-bag-bundle": "^2.2",
-        "setono/tag-bag-gtag": "^1.4.1",
-        "setono/tag-bag-twig": "^1.1",
+        "setono/tag-bag": "dev-fix/composer",
+        "setono/tag-bag-bundle": "dev-fix/composer",
+        "setono/tag-bag-gtag": "dev-fix/composer",
+        "setono/tag-bag-twig": "dev-fix/composer",
         "sylius/resource-bundle": "^1.6",
         "symfony/config": "^4.4 || ^5.0",
         "symfony/dependency-injection": "^4.4 || ^5.0",
@@ -42,7 +42,7 @@
         "roave/security-advisories": "dev-master",
         "setono/code-quality-pack": "^2.1.2",
         "setono/sylius-behat-pack": "^0.1",
-        "setono/sylius-tag-bag-plugin": "^1.1",
+        "setono/sylius-tag-bag-plugin": "dev-fix/composer",
         "sylius/sylius": "~1.10.0",
         "symfony/debug-bundle": "^4.4 || ^5.0",
         "symfony/dotenv": "^4.4 || ^5.0",
@@ -85,5 +85,27 @@
             "@phpunit",
             "@phpspec"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Wishibam/tag-bag"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Wishibam/TagBagBundle"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Wishibam/tag-bag-gtag"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Wishibam/tag-bag-twig"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Wishibam/SyliusTagBagPlugin"
+        }
+    ]
 }
